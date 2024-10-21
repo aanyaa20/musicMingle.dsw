@@ -1,0 +1,8 @@
+body{
+    opacity: 1;
+      transition: opacity 0s ease-in-out;
+}
+#logo{
+    width:100%;
+    height:100%;
+}

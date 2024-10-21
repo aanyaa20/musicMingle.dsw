@@ -1,0 +1,157 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    background-size: 100%;
+}
+.back {
+    background-image: url("./Images/cart-background.jpg");
+    /* Set the height */
+    height: 2000px;
+   /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+.right {
+    z-index: 1;
+    margin-left: 100px;
+    position: fixed;
+    right: 14px;
+    top: 0px;
+    display: inline-block;
+}
+.navbar { 
+    z-index: 1;
+    margin-top: 0px;
+    margin-left: 0%;
+    height:50px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    display: inline-block;
+}
+header{
+    margin:0px;
+    padding:0px;    
+    height:80px;
+    background: transparent;
+}
+.navbar li {
+    z-index: 1;
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 21px;
+}
+
+.navbar li a {
+    vertical-align: top;
+    font-size: 25px;
+    margin:5px;
+    margin-left: 0px;
+    align-items: center;
+    padding: 0px 23px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: gray;
+}
+    .btn {
+        font-family: 'Chela One', cursive;
+        margin: 4px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+    .item{
+        position: relative;
+        display: inline-block;
+        gap: 0px;
+        width: 70%;
+        height: 250px;
+        background-color: rgba(210, 103, 249, 0.3);
+        margin: 2px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+    .box{
+        margin-top: 4px;
+        display: inline-block;
+        border: 8px solidrgba(252, 2, 243, 0.3);
+        height: 230px;
+        width: 230px;
+        background-color: white;
+        padding: 0px;
+    }
+    .box1-img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    .info{
+        margin-top:20px;
+        margin-left: 20px;
+        height:200px;
+        width:70%;
+        font-size: 30px;
+        color:white;
+        vertical-align: top;
+        display: inline-block;
+    }
+    .name{
+        height:100px;
+    }
+    .price{
+        display: inline-block;
+        position:relative;
+        height:30px;
+        width:40%;
+        vertical-align: top;
+        font-size: 30px;
+        color:white;
+    }
+    .quantity{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .OrderBox{
+        position: relative;
+        display: inline-block;
+        gap: 0px;
+        width: 70%;
+        height: 250px;
+        background-color: rgba(69, 15, 88, 0.444);
+        margin: 2px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+    .Removebtn{
+        background-color: silver;
+        border-radius: 10px;
+    }
+    .Removebtn:hover{
+        cursor:pointer;
+        background-color: gery;
+    }

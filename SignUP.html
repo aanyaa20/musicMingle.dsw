@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        body{   
+            background-image: url("./Images/background.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+        }
+        #Box{
+            justify-content: center;
+            border-style: solid;    
+            border-color: rgb(0, 0, 0);
+            background-color: beige;
+            border-radius: 30px;
+            width:350px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            margin:auto;
+            margin-top: 40px;
+            box-shadow: 0 0 30px rgba(0, 0, 0,5);
+        }
+
+        .Form h1{
+            text-align: center;
+            padding: 20px;
+        }
+        .Form label{
+            display: flex;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .Form input{
+            width: 100%;
+            height: 20px;
+        }
+        #signup{
+            height: 35px;
+            width:100%;
+            font-weight:500;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            background-color: #ff7200;
+        }
+        #signup:hover{
+            color: white;
+            background-color: #c35800;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Box">
+    <form action="SignUPdB.php" method="post" class="Form">
+        <h1>Create Account</h1>
+
+        <label for="FName">FirstName:</label>
+        <input name="FName" type="text" required><br>
+
+        <label for="LName">LastName:</label>
+        <input name="LName" type="text"><br>
+
+        <label for="Phone">Phone Number:</label>
+        <input name="Phone" type="tel" required><br>
+
+        <label for="Address">Address:</label>
+        <input name="Address" type="text" required><br>
+
+        <label for="City">City:</label>
+        <input name="City" type="text" required><br>
+
+        <label for="Pincode">Pincode:</label>
+        <input name="Pincode" type="number" required><br>
+        
+        <label for="Username">Username:</label>
+        <input name="Username" type="text" required><br>
+
+        <label for="Password">Password:</label>
+        <input name="Password" type="password" required><br>
+        
+        <input type="submit" id="signup" value="Sign Up">
+    </form>
+    <br><br><p>By clicking the SignUp Button, you agree to our <a href="TnC.html">Terms and Conditions</a> and <a href="PP.html">Privacy Policy</a>.
+    </p><br>
+    <p>Already have an Account, Goto <a href="Login.html">Log In</a>.</p>
+    </div>
+</body>
+</html>

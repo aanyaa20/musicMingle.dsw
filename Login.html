@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .back{
+        white-space: nowrap;
+        overflow: hidden;
+        }
+        body{   
+            background-image: url("./Images/background.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+        }
+        .back {
+            position: relative;
+            background-image: url("./Images/background.jpg");
+            /* Set the height */
+            height: 2000px;
+            /* Create a parallax effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .back{
+        white-space: nowrap;
+        overflow: hidden;
+        }
+        #Box{
+            justify-content: center;
+            border-style: solid;    
+            border-color: rgb(0, 0, 0);
+            background-color: beige;
+            border-radius: 30px;
+            width: 300px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin:auto;
+            margin-top: 8%;
+            box-shadow: 0 0 30px rgba(0, 0, 0,5);
+        }
+        .Form h1{
+            text-align: center;
+            padding: 20px;
+        }
+        .Form label{
+            display: flex;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .Form input{
+            width: 100%;
+            height:20px;
+        }
+        #login{
+            height: 35px;
+            width:100%;
+            font-weight:500;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            background-color: #ff7200;
+        }
+        #login:hover{
+            color: white;
+            background-color: #c35800;
+        }
+    </style>
+</head>
+<body>
+    <div id="Box">
+        <form action="LogindB.php" method="post" class="Form">
+            <h1>Login</h1>
+            <label for="Username">Username:</label>
+            <input name="Username" type="text" required><br>
+
+            <label for="Password">Password:</label>
+            <input name="Password" type="password" required><br>
+            
+            <input type="submit" id="login" value="Login">
+        </form>
+        <br><p>Don't have an Account, <a href="SignUP.html">Create Account</a></p><br>
+</div>
+</body>
+</html>
